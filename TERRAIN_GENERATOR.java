@@ -47,7 +47,7 @@ public class TERRAIN_GENERATOR {
                 for (int l=-1;l<=1;l++){
                     try{
                         if (terrain_matrix[i+k][j+l]!=-1){
-                            sum=(sum)+Math.abs((terrain_matrix[i+k][j+l])-(Math.random())*smoothness);
+                            sum=(sum)+Math.abs((terrain_matrix[i+k][j+l])-(Math.random())*(1-smoothness));
                             ran_times++;
                         }
                     }
