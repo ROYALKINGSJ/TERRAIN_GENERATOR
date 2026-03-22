@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class TERRAIN_GENERATOR {
     static double[][] terrain_matrix;
-    static double smoothness=0.5;
+    static double smoothness=0.1;
     static int n;
     
     public static void main(String[] args) {
@@ -30,7 +30,7 @@ public class TERRAIN_GENERATOR {
             System.out.println();
         }
 
-        MatrixExporter.exportToCSV(terrain_matrix, "terrain_matrix.csv");
+        MatrixExporter.exportToCSV(terrain_matrix, "TERRAIN_GENERATOR/terrain_matrix.csv");
 
         sc.close();
     }
