@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class TERRAIN_GENERATOR {
     static double[][] terrain_matrix;
-    static double smoothness=0.5;
+    static double smoothness=0.6;
     static int n;
     
     public static void main(String[] args) {
@@ -40,7 +40,7 @@ public class TERRAIN_GENERATOR {
         int ran_times=0;
 
         if (i==0 && j==0){
-            return Math.random();
+            return ((Math.random())*(Math.random()))*(1-smoothness);
         }
         else{
             for (int k=-1;k<=1;k++){
